@@ -221,5 +221,5 @@ pred, X_embedded = predict(latents)
 
 # 由於是 unsupervised 的二分類問題，我們只在乎有沒有成功將圖片分成兩群
 # 如果上面的檔案上傳 kaggle 後正確率不足 0.5，只要將 label 反過來就行了
-save_prediction(invert(pred), sys.argv[1])    
+save_prediction(invert(pred), sys.argv[2])    
 
